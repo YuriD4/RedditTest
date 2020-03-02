@@ -8,8 +8,18 @@
 
 import UIKit
 
+protocol GeneralViewControllerInput: class {
+    func handleStateChange(_ state: ListState<PostCellModel>)
+}
+
 class GeneralViewController: UIViewController {
 
+    @IBOutlet private weak var tableView: UITableView!
+    
+    private let stateView = StateContainerView()
+    private let presenter: GeneralPresenter
+    private var cellModels: [PostCellModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

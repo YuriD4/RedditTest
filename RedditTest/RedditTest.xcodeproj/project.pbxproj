@@ -20,6 +20,17 @@
 		2ED8825A240C74DC00DCB06F /* GeneralPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED88259240C74DC00DCB06F /* GeneralPresenter.swift */; };
 		2ED8825C240D208600DCB06F /* ListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8825B240D208600DCB06F /* ListState.swift */; };
 		2ED8825E240D20A500DCB06F /* List+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8825D240D20A500DCB06F /* List+Extensions.swift */; };
+		2ED88263240D6AD200DCB06F /* StateContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED88262240D6AD200DCB06F /* StateContainerView.swift */; };
+		2ED88266240D6C3400DCB06F /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED88265240D6C3400DCB06F /* ErrorView.swift */; };
+		2ED88268240D6C3F00DCB06F /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED88267240D6C3F00DCB06F /* ErrorView.xib */; };
+		2ED8826C240D6CDA00DCB06F /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8826B240D6CDA00DCB06F /* EmptyView.swift */; };
+		2ED8826E240D6CE200DCB06F /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED8826D240D6CE200DCB06F /* EmptyView.xib */; };
+		2ED88271240D6DDE00DCB06F /* LoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED88270240D6DDE00DCB06F /* LoaderView.xib */; };
+		2ED88273240D6E0700DCB06F /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED88272240D6E0700DCB06F /* LoaderView.swift */; };
+		2ED88275240D6F1200DCB06F /* XibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED88274240D6F1200DCB06F /* XibLoadable.swift */; };
+		2ED88279240D6FA500DCB06F /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED88277240D6FA500DCB06F /* PostCell.swift */; };
+		2ED8827A240D6FA500DCB06F /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED88278240D6FA500DCB06F /* PostCell.xib */; };
+		2ED8827C240D6FBF00DCB06F /* PostCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8827B240D6FBF00DCB06F /* PostCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +49,17 @@
 		2ED88259240C74DC00DCB06F /* GeneralPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPresenter.swift; sourceTree = "<group>"; };
 		2ED8825B240D208600DCB06F /* ListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListState.swift; sourceTree = "<group>"; };
 		2ED8825D240D20A500DCB06F /* List+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+Extensions.swift"; sourceTree = "<group>"; };
+		2ED88262240D6AD200DCB06F /* StateContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateContainerView.swift; sourceTree = "<group>"; };
+		2ED88265240D6C3400DCB06F /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		2ED88267240D6C3F00DCB06F /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		2ED8826B240D6CDA00DCB06F /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		2ED8826D240D6CE200DCB06F /* EmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
+		2ED88270240D6DDE00DCB06F /* LoaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoaderView.xib; sourceTree = "<group>"; };
+		2ED88272240D6E0700DCB06F /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		2ED88274240D6F1200DCB06F /* XibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibLoadable.swift; sourceTree = "<group>"; };
+		2ED88277240D6FA500DCB06F /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		2ED88278240D6FA500DCB06F /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		2ED8827B240D6FBF00DCB06F /* PostCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +92,7 @@
 		2ED88235240C619100DCB06F /* RedditTest */ = {
 			isa = PBXGroup;
 			children = (
+				2ED88261240D6AB500DCB06F /* StateView */,
 				2ED88252240C65E000DCB06F /* New Group */,
 				2ED88236240C619100DCB06F /* AppDelegate.swift */,
 				2ED8823F240C619300DCB06F /* Assets.xcassets */,
@@ -89,11 +112,61 @@
 		2ED88252240C65E000DCB06F /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				2ED88276240D6F8E00DCB06F /* Cells */,
 				2ED88253240C6DB600DCB06F /* GeneralViewController.swift */,
 				2ED88254240C6DB600DCB06F /* GeneralViewController.xib */,
 				2ED88259240C74DC00DCB06F /* GeneralPresenter.swift */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		2ED88261240D6AB500DCB06F /* StateView */ = {
+			isa = PBXGroup;
+			children = (
+				2ED8826F240D6D6900DCB06F /* LoaderView */,
+				2ED8826A240D6CCD00DCB06F /* EmptyView */,
+				2ED88264240D6BFF00DCB06F /* ErrorView */,
+				2ED88262240D6AD200DCB06F /* StateContainerView.swift */,
+				2ED88274240D6F1200DCB06F /* XibLoadable.swift */,
+			);
+			path = StateView;
+			sourceTree = "<group>";
+		};
+		2ED88264240D6BFF00DCB06F /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				2ED88265240D6C3400DCB06F /* ErrorView.swift */,
+				2ED88267240D6C3F00DCB06F /* ErrorView.xib */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		2ED8826A240D6CCD00DCB06F /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				2ED8826B240D6CDA00DCB06F /* EmptyView.swift */,
+				2ED8826D240D6CE200DCB06F /* EmptyView.xib */,
+			);
+			path = EmptyView;
+			sourceTree = "<group>";
+		};
+		2ED8826F240D6D6900DCB06F /* LoaderView */ = {
+			isa = PBXGroup;
+			children = (
+				2ED88270240D6DDE00DCB06F /* LoaderView.xib */,
+				2ED88272240D6E0700DCB06F /* LoaderView.swift */,
+			);
+			path = LoaderView;
+			sourceTree = "<group>";
+		};
+		2ED88276240D6F8E00DCB06F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2ED88277240D6FA500DCB06F /* PostCell.swift */,
+				2ED88278240D6FA500DCB06F /* PostCell.xib */,
+				2ED8827B240D6FBF00DCB06F /* PostCellModel.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +228,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ED88243240C619300DCB06F /* LaunchScreen.storyboard in Resources */,
+				2ED88271240D6DDE00DCB06F /* LoaderView.xib in Resources */,
 				2ED88240240C619300DCB06F /* Assets.xcassets in Resources */,
+				2ED8827A240D6FA500DCB06F /* PostCell.xib in Resources */,
 				2ED88256240C6DB600DCB06F /* GeneralViewController.xib in Resources */,
+				2ED88268240D6C3F00DCB06F /* ErrorView.xib in Resources */,
+				2ED8826E240D6CE200DCB06F /* EmptyView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,8 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED88279240D6FA500DCB06F /* PostCell.swift in Sources */,
 				2ED88258240C6DD600DCB06F /* Navigator.swift in Sources */,
 				2ED88251240C65A900DCB06F /* CoreComponentsDependency.swift in Sources */,
+				2ED88273240D6E0700DCB06F /* LoaderView.swift in Sources */,
+				2ED88275240D6F1200DCB06F /* XibLoadable.swift in Sources */,
+				2ED8827C240D6FBF00DCB06F /* PostCellModel.swift in Sources */,
 				2ED8825C240D208600DCB06F /* ListState.swift in Sources */,
 				2ED88237240C619100DCB06F /* AppDelegate.swift in Sources */,
 				2ED8824F240C659D00DCB06F /* CoreComponentsFactory.swift in Sources */,
@@ -176,6 +257,9 @@
 				2ED8824B240C653C00DCB06F /* AppAssembly.swift in Sources */,
 				2ED8825E240D20A500DCB06F /* List+Extensions.swift in Sources */,
 				2ED8824D240C656D00DCB06F /* CoreComponents.swift in Sources */,
+				2ED88263240D6AD200DCB06F /* StateContainerView.swift in Sources */,
+				2ED88266240D6C3400DCB06F /* ErrorView.swift in Sources */,
+				2ED8826C240D6CDA00DCB06F /* EmptyView.swift in Sources */,
 				2ED8825A240C74DC00DCB06F /* GeneralPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
