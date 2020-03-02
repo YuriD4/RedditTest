@@ -18,6 +18,8 @@
 		2ED88256240C6DB600DCB06F /* GeneralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED88254240C6DB600DCB06F /* GeneralViewController.xib */; };
 		2ED88258240C6DD600DCB06F /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED88257240C6DD600DCB06F /* Navigator.swift */; };
 		2ED8825A240C74DC00DCB06F /* GeneralPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED88259240C74DC00DCB06F /* GeneralPresenter.swift */; };
+		2ED8825C240D208600DCB06F /* ListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8825B240D208600DCB06F /* ListState.swift */; };
+		2ED8825E240D20A500DCB06F /* List+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8825D240D20A500DCB06F /* List+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		2ED88254240C6DB600DCB06F /* GeneralViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralViewController.xib; sourceTree = "<group>"; };
 		2ED88257240C6DD600DCB06F /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		2ED88259240C74DC00DCB06F /* GeneralPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPresenter.swift; sourceTree = "<group>"; };
+		2ED8825B240D208600DCB06F /* ListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListState.swift; sourceTree = "<group>"; };
+		2ED8825D240D20A500DCB06F /* List+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				2ED8824C240C656D00DCB06F /* CoreComponents.swift */,
 				2ED8824E240C659D00DCB06F /* CoreComponentsFactory.swift */,
 				2ED88250240C65A900DCB06F /* CoreComponentsDependency.swift */,
+				2ED8825B240D208600DCB06F /* ListState.swift */,
+				2ED8825D240D20A500DCB06F /* List+Extensions.swift */,
 			);
 			path = RedditTest;
 			sourceTree = "<group>";
@@ -163,10 +169,12 @@
 			files = (
 				2ED88258240C6DD600DCB06F /* Navigator.swift in Sources */,
 				2ED88251240C65A900DCB06F /* CoreComponentsDependency.swift in Sources */,
+				2ED8825C240D208600DCB06F /* ListState.swift in Sources */,
 				2ED88237240C619100DCB06F /* AppDelegate.swift in Sources */,
 				2ED8824F240C659D00DCB06F /* CoreComponentsFactory.swift in Sources */,
 				2ED88255240C6DB600DCB06F /* GeneralViewController.swift in Sources */,
 				2ED8824B240C653C00DCB06F /* AppAssembly.swift in Sources */,
+				2ED8825E240D20A500DCB06F /* List+Extensions.swift in Sources */,
 				2ED8824D240C656D00DCB06F /* CoreComponents.swift in Sources */,
 				2ED8825A240C74DC00DCB06F /* GeneralPresenter.swift in Sources */,
 			);
