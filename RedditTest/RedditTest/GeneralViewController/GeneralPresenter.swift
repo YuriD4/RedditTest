@@ -35,6 +35,7 @@ final class GeneralPresenterImpl: GeneralPresenter {
     
     private var lastPageID: String?
     private var cellModels: [PostCellModel] = []
+    private var isLoadingNewItems = false
     
     init(apiManager: APIManager, navigator: Navigator) {
         self.apiManager = apiManager
@@ -46,6 +47,8 @@ final class GeneralPresenterImpl: GeneralPresenter {
     }
 
     func getPosts() {
+        if isLoadingNewItems { return }
+        isLoadingNewItems = true
         listState = .loading
         guard let url = URL.topPosts() else { return listState = .error(nil) }
         
@@ -62,11 +65,14 @@ final class GeneralPresenterImpl: GeneralPresenter {
             case .failure(let error):
                 self.listState = .error(error)
             }
+            
+            self.isLoadingNewItems = false
         }
     }
     
     func getNewItems() {
-        guard let url = URL.topPosts(lastId: lastPageID) else { return }
+        guard let url = URL.topPosts(lastId: lastPageID), isLoadingNewItems == false else { return }
+        isLoadingNewItems = true
         
         apiManager.fetch(with: url) { [weak self] (result: Result<TopPostsResult, Error>) -> Void in
             guard let self = self else { return }
@@ -80,6 +86,8 @@ final class GeneralPresenterImpl: GeneralPresenter {
             case .failure(let error):
                 self.listState = .error(error)
             }
+            
+            self.isLoadingNewItems = false
         }
     }
     
