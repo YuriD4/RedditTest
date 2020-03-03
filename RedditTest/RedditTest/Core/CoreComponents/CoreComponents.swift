@@ -19,5 +19,6 @@ final class CoreComponents {
         self.dependency = CoreComponentsDependency()
     }
     
+    var apiManager: APIManager { return factory.apiManager() }
 }
 

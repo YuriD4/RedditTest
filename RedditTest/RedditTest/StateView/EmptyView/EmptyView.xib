@@ -7,9 +7,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyView" customModule="RedditTest" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLabel" destination="kDr-I9-7aj" id="KHf-yJ-Tns"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EmptyView" customModule="RedditTest" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -28,9 +32,6 @@
                 <constraint firstItem="kDr-I9-7aj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xhA-vX-0BK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <connections>
-                <outlet property="messageLabel" destination="kDr-I9-7aj" id="u7J-bn-eMu"/>
-            </connections>
             <point key="canvasLocation" x="139" y="153"/>
         </view>
     </objects>

@@ -9,8 +9,7 @@
 import UIKit
 
 protocol Navigator {
-    
-    
+    func navigateToExternalLink(url: URL?)
 }
 
 final class NavigatorImpl: Navigator {
@@ -28,9 +27,14 @@ final class NavigatorImpl: Navigator {
     }
     
     private func setupInitialViewController() {
-        //window?.rootViewController = appAssembly.onBoardingController(navigator: self)
+        window?.rootViewController = appAssembly.generalViewController(navigator: self)
         self.window?.makeKeyAndVisible()
     }
     
+    func navigateToExternalLink(url: URL?) {
+        if let url = url {
+            UIApplication.shared.open(url)
+        }
+    }
 }
 

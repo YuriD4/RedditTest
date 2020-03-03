@@ -8,6 +8,8 @@
 
 import UIKit
 
-class CoreComponentsFactory: NSObject {
-
+class CoreComponentsFactory {
+    func apiManager() -> APIManager {
+        return APIManagerImpl()
+    }
 }
